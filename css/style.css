@@ -134,6 +134,9 @@ body {
   width: 100%;
   height: 83vh;
   border-bottom: 1px solid #181818;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 #wrap main .about {
   width: 100%;
@@ -354,8 +357,11 @@ body {
   border-bottom: 1px solid #181818;
   display: flex;
 }
-#wrap main .publishing_project .project_thumb {
+#wrap main .publishing_project a {
   width: 50%;
+  height: 100%;
+}
+#wrap main .publishing_project .project_thumb {
   height: 100%;
   overflow: hidden;
   position: relative;
@@ -402,35 +408,48 @@ body {
   font-family: 900;
 }
 #wrap main .publishing_project .project_ex .project_ex_inner_another {
-  width: 30%;
-  height: 80%;
+  width: 100%;
+  height: 10%;
   position: absolute;
-  right: 10%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-#wrap main .publishing_project .project_ex .project_ex_inner_another button {
-  width: 220px;
-  height: 50px;
-  background-color: #181818;
-  border: 1px solid #181818;
-  border-radius: 5px;
+  bottom: 0;
+  border-top: 1px solid #181818;
   font-family: "pretendard";
+}
+#wrap main .publishing_project .project_ex .project_ex_inner_another .pub_button {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#wrap main .publishing_project .project_ex .project_ex_inner_another .pub_button a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: #181818;
+}
+#wrap main .publishing_project .project_ex .project_ex_inner_another .go {
+  height: 100%;
+  background-color: #FE3C00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #fff;
   cursor: pointer;
   transition: all ease-in-out 0.3s;
 }
-#wrap main .publishing_project .project_ex .project_ex_inner_another button:hover {
-  background-color: #FE3C00;
-  border: none;
+#wrap main .publishing_project .project_ex .project_ex_inner_another .go:hover {
+  background-color: #181818;
+  color: #fff;
 }
-#wrap main .publishing_project .project_ex .project_ex_inner_another .project {
-  margin-right: 10px;
+#wrap main .publishing_project .project_ex .project_ex_inner_another .pub_button_left {
+  border-right: 1px solid #181818;
+  color: #181818;
+  background-color: #fff;
 }
 #wrap main .design_project {
   width: 100%;
-  height: 70vh;
+  height: 100vh;
   border-bottom: 1px solid #181818;
 }
 #wrap main .design_project .design_project_wrap {
@@ -449,14 +468,172 @@ body {
   width: 100%;
   height: 50%;
   border-bottom: 1px solid #181818;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+#wrap main .design_project .design_project_wrap .left_wrap .design_top img {
+  width: 100%;
+}
+#wrap main .design_project .design_project_wrap .left_wrap .design_top a {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+}
+#wrap main .design_project .design_project_wrap .left_wrap .design_top .bar {
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid #181818;
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+#wrap main .design_project .design_project_wrap .left_wrap .design_top .bar img {
+  width: 20px;
+  height: 20px;
+}
+#wrap main .design_project .design_project_wrap .left_wrap .design_top .bar .tap {
+  position: absolute;
+  right: 30px;
+  width: 20px;
+  height: 20px;
+  display: none;
+}
+#wrap main .design_project .design_project_wrap .left_wrap .design_top .bar h4 {
+  padding-left: 20px;
+}
+#wrap main .design_project .design_project_wrap .left_wrap .design_top .bar:hover {
+  background-color: #181818;
+  color: #d9d9d9;
+}
+#wrap main .design_project .design_project_wrap .left_wrap .design_top .bar:hover h4 {
+  color: #d9d9d9;
+}
+#wrap main .design_project .design_project_wrap .left_wrap .design_top .bar:hover .tap {
+  display: block;
 }
 #wrap main .design_project .design_project_wrap .left_wrap .design_bottom {
   width: 100%;
   height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+#wrap main .design_project .design_project_wrap .left_wrap .design_bottom img {
+  width: 100%;
+}
+#wrap main .design_project .design_project_wrap .left_wrap .design_bottom a {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+}
+#wrap main .design_project .design_project_wrap .left_wrap .design_bottom .bar {
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid #181818;
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all ease-in-out 0.3s;
+}
+#wrap main .design_project .design_project_wrap .left_wrap .design_bottom .bar img {
+  width: 20px;
+  height: 20px;
+}
+#wrap main .design_project .design_project_wrap .left_wrap .design_bottom .bar h4 {
+  padding-left: 20px;
+}
+#wrap main .design_project .design_project_wrap .left_wrap .design_bottom .bar .tap {
+  position: absolute;
+  right: 30px;
+  width: 20px;
+  height: 20px;
+  display: none;
+}
+#wrap main .design_project .design_project_wrap .left_wrap .design_bottom .bar:hover {
+  background-color: #181818;
+  color: #d9d9d9;
+}
+#wrap main .design_project .design_project_wrap .left_wrap .design_bottom .bar:hover h4 {
+  color: #d9d9d9;
+}
+#wrap main .design_project .design_project_wrap .left_wrap .design_bottom .bar:hover .tap {
+  display: block;
 }
 #wrap main .design_project .design_project_wrap .right_wrap {
   width: 50%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+#wrap main .design_project .design_project_wrap .right_wrap img {
+  height: 100%;
+}
+#wrap main .design_project .design_project_wrap .right_wrap a {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+}
+#wrap main .design_project .design_project_wrap .right_wrap a .bar {
+  border-top: 1px solid #181818;
+  background-color: #fff;
+  height: 100%;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all ease-in-out 0.3s;
+}
+#wrap main .design_project .design_project_wrap .right_wrap a .bar img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 30px;
+}
+#wrap main .design_project .design_project_wrap .right_wrap a .bar h4 {
+  padding-left: 20px;
+}
+#wrap main .design_project .design_project_wrap .right_wrap a .bar .tap {
+  position: absolute;
+  right: 30px;
+  width: 20px;
+  height: 20px;
+  display: none;
+}
+#wrap main .design_project .design_project_wrap .right_wrap a .bar:hover {
+  background-color: #181818;
+  color: #d9d9d9;
+}
+#wrap main .design_project .design_project_wrap .right_wrap a .bar:hover h4 {
+  color: #d9d9d9;
+}
+#wrap main .design_project .design_project_wrap .right_wrap a .bar:hover .tap {
+  display: block;
 }
 #wrap main .animation_bar {
   width: 100%;
@@ -495,10 +672,46 @@ body {
   width: 100%;
   height: 50vh;
   border-bottom: 1px solid #181818;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrap main .contact .contact_inner {
+  width: 90%;
+  height: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+#wrap main .contact .contact_inner .contact_top {
+  width: 100%;
+  height: 80%;
+  align-self: flex-start;
+}
+#wrap main .contact .contact_inner .contact_top p {
+  font-size: 1.2rem;
+}
+#wrap main .contact .contact_inner .contact_top h1 {
+  font-size: 5rem;
+  line-height: 60px;
+}
+#wrap main .contact .contact_inner .contact_top h3 {
+  font-size: 2rem;
+  font-family: "pretendard";
+  margin-top: 20px;
+}
+#wrap main .contact .contact_inner .contact_bottom {
+  width: 100%;
+  height: 80%;
+}
+#wrap main .contact .contact_inner .contact_bottom p {
+  font-size: 2rem;
+  line-height: 50px;
 }
 #wrap footer {
   width: 100%;
-  height: 10vh;
+  height: 16vh;
   background-color: #181818;
   text-align: center;
   display: flex;
@@ -508,4 +721,5 @@ body {
 #wrap footer p {
   color: #fff;
   font-size: 1.1rem;
+  line-height: 27px;
 }
