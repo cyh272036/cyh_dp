@@ -47,154 +47,13 @@ body {
     width: 100%;
     height: 100%;
 
-    header {
-        width: 100%;
-        height: 50px;
-        position: relative;
-
-        border-bottom: 1px solid #181818;
-        background-color: $pointcolor;
-
-        .animated-title {
-            font-size: 1.1rem;
-            font-weight: 400;
-            width: 100%;
-            max-width: 100%;
-            height: 100%;
-            overflow-x: hidden;
-            overflow-y: hidden;
-
-            position: absolute;
-
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 2000;
-
-            .track {
-                position: absolute;
-                white-space: nowrap;
-                will-change: transform;
-                animation: marquee 60s linear infinite;
-            }
-        }
-
-        @keyframes marquee {
-            from {
-                transform: translateX(0);
-            }
-
-            to {
-                transform: translateX(-50%);
-            }
-        }
-    }
-
-    .navbar_wrap {
-        width: 100%;
-        height: 100px;
-        position: relative;
-
-        display: flex;
-        align-items: center;
-
-        border-bottom: 1px solid #181818;
-
-        .navbar_inner {
-            width: 100%;
-            height: 100%;
-
-            display: flex;
-
-            .navbar_logo {
-                width: 10%;
-                height: 100%;
-                border-right: 1px solid #181818;
-
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                img {
-                    width: 60%;
-                }
-            }
-
-            .navbar_nav {
-                width: 80%;
-                height: 100%;
-                border-right: 1px solid #181818;
-
-                display: flex;
-                align-items: center;
-                justify-content: end;
-
-                .navbar_nav_inner {
-                    width: 50%;
-                    height: 70%;
-
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-
-                    ul {
-                        width: 70%;
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
-
-                        li {
-                            font-size: 1.2rem;
-                            font-weight: 600;
-                            cursor: pointer;
-
-                            background-image: linear-gradient(transparent calc(100% - 3px), $pointcolor 1px);
-                            background-repeat: no-repeat;
-                            background-size: 0% 100%;
-                            transition: background-size 0.8s;
-                        }
-
-                        li:hover {
-                            background-size: 100% 100%;
-                        }
-                    }
-                }
-            }
-
-            .navbar_get {
-                width: 10%;
-                height: 100%;
-                border-right: 1px solid #181818;
-                background-color: #181818;
-
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                cursor: pointer;
-
-                p {
-                    width: 80%;
-                    text-align: center;
-                    color: #fff;
-                    letter-spacing: 2px;
-                }
-            }
-
-            .navbar_get:hover {
-                background-color: $pointcolor;
-            }
-        }
-    }
-
     main {
         .main_content {
             width: 100%;
             height: 800px;
             position: relative;
-            z-index: 20000;
             border-bottom: 1px solid #181818;
-            background: linear-gradient( 0deg, #FE3C00, #fff );
+            background: linear-gradient(0deg, #FE3C00, #fff);
 
             .logo {
                 display: flex;
@@ -313,7 +172,7 @@ body {
                     height: 24px;
                     bottom: 32%;
                     left: 50%;
-                    transform: translate(-50%,-50%);
+                    transform: translate(-50%, -50%);
                 }
 
                 .chevron {
@@ -456,7 +315,7 @@ body {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background: linear-gradient( 90deg, #FE3C00, #fff );
+                background: linear-gradient(90deg, #FE3C00, #fff);
 
                 .about_left_content {
                     width: 80%;
@@ -504,7 +363,7 @@ body {
                 overflow: hidden;
                 position: relative;
 
-                .about_right_inner{
+                .about_right_inner {
                     width: 90%;
                     height: 90%;
                     background-image: url(../img/about.png);
@@ -512,11 +371,11 @@ body {
                     background-position: center;
 
                     position: absolute;
-                    transform: translate(-50%,-50%);
+                    transform: translate(-50%, -50%);
                     top: 50%;
                     left: 50%;
                 }
-                
+
             }
         }
 
@@ -675,8 +534,6 @@ body {
                 overflow-x: hidden;
                 overflow-y: hidden;
 
-                z-index: 2000;
-
                 display: flex;
                 align-items: center;
 
@@ -723,13 +580,20 @@ body {
                 overflow: hidden;
                 position: relative;
 
+
                 img {
                     width: 100%;
                     position: absolute;
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
+
+                    transition: all ease-in-out 0.3s;
                 }
+            }
+
+            .project_thumb:hover img {
+                width: 110%;
             }
 
             .right {
