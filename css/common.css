@@ -204,6 +204,16 @@ header .animated-title .track {
   }
 }
 
+.goto {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+}
+.goto img {
+  width: 150px;
+  height: 150px;
+}
+
 footer {
   width: 100%;
   height: 16vh;

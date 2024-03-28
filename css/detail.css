@@ -3,6 +3,7 @@
   height: 70vh;
   border-bottom: 1px solid #181818;
   display: flex;
+  position: relative;
 }
 .detail_wrap .side {
   width: 50%;
@@ -17,13 +18,32 @@
 }
 .detail_wrap .right {
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: center;
+  background: linear-gradient(180deg, #FE3C00, #fff);
 }
 .detail_wrap .right .right_inner {
   width: 80%;
-  height: 80%;
-  background-color: darkgoldenrod;
+  height: 45%;
+  font-family: "pretendard";
+  word-break: keep-all;
+}
+.detail_wrap .right .right_inner h1 {
+  margin-bottom: 10px;
+  font-size: 3rem;
+}
+.detail_wrap .right .right_inner h3 {
+  margin-bottom: 20px;
+}
+.detail_wrap .right .right_inner tr {
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+}
+.detail_wrap .right .right_inner th {
+  text-align: left;
+}
+.detail_wrap .right .right_inner td {
+  padding-left: 10px;
 }
 
 .detail_content {
@@ -40,18 +60,72 @@
   height: 100%;
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: space-between;
 }
 .detail_content .inner .dt_content_text {
   width: 50%;
+  height: auto;
+  padding-bottom: 100px;
+}
+.detail_content .inner .dt_content_text h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+.detail_content .inner .dt_content_text p {
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  font-family: "pretendard";
+}
+.detail_content .inner .scroll {
+  align-self: center;
+  width: 35%;
   height: 80%;
-  background-color: salmon;
+  overflow-x: hidden;
+  padding: 0;
+  position: relative;
+  border: 1px solid #181818;
+}
+.detail_content .inner .scroll h2 {
+  font-family: "pretendard";
+}
+.detail_content .inner .scroll img {
+  width: 100%;
+}
+.detail_content .inner .scroll::-webkit-scrollbar {
+  width: 10px;
+}
+.detail_content .inner .scroll::-webkit-scrollbar-thumb {
+  height: 30%;
+  background: #FE3C00;
+  border-radius: 10px;
 }
 .detail_content .inner .dt_content_img {
   width: 60%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 .detail_content .inner .dt_content_img img {
   height: 100%;
+}
+.detail_content .inner .textbox {
+  position: absolute;
+  bottom: 35px;
+  right: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: "pretendard";
+}
+
+.goto {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+}
+.goto img {
+  width: 150px;
+  height: 150px;
 }

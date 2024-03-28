@@ -17,13 +17,34 @@
 }
 .detail_wrap .right {
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: center;
+  background: linear-gradient(180deg, #FE3C00, #fff);
 }
 .detail_wrap .right .right_inner {
   width: 80%;
-  height: 80%;
-  background-color: darkgoldenrod;
+  height: 45%;
+  font-family: "pretendard";
+  word-break: keep-all;
+  margin-bottom: 0px;
+}
+.detail_wrap .right .right_inner h1 {
+  margin-bottom: 10px;
+  font-size: 3rem;
+}
+.detail_wrap .right .right_inner h3 {
+  margin-bottom: 20px;
+}
+.detail_wrap .right .right_inner tr {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+.detail_wrap .right .right_inner th {
+  text-align: left;
+  width: 20%;
+}
+.detail_wrap .right .right_inner td {
+  padding-left: 10px;
 }
 
 .bar {
