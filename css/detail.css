@@ -80,7 +80,7 @@
 }
 .detail_content .inner .scroll {
   align-self: center;
-  width: 35%;
+  width: 40%;
   height: 80%;
   overflow-x: hidden;
   padding: 0;
@@ -106,7 +106,7 @@
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 .detail_content .inner .dt_content_img img {
   height: 100%;
