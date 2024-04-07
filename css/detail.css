@@ -18,15 +18,16 @@
 }
 .detail_wrap .right {
   display: flex;
-  align-items: end;
+  align-items: center;
   justify-content: center;
   background: linear-gradient(180deg, #FE3C00, #fff);
 }
 .detail_wrap .right .right_inner {
   width: 80%;
-  height: 45%;
+  height: auto;
   font-family: "pretendard";
   word-break: keep-all;
+  padding-top: 10%;
 }
 .detail_wrap .right .right_inner h1 {
   margin-bottom: 10px;
@@ -41,6 +42,7 @@
 }
 .detail_wrap .right .right_inner th {
   text-align: left;
+  width: 20%;
 }
 .detail_wrap .right .right_inner td {
   padding-left: 10px;

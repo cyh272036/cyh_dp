@@ -17,16 +17,16 @@
 }
 .detail_wrap .right {
   display: flex;
-  align-items: end;
+  align-items: center;
   justify-content: center;
   background: linear-gradient(180deg, #FE3C00, #fff);
 }
 .detail_wrap .right .right_inner {
   width: 80%;
-  height: 45%;
+  height: auto;
   font-family: "pretendard";
   word-break: keep-all;
-  margin-bottom: 0px;
+  padding-top: 10%;
 }
 .detail_wrap .right .right_inner h1 {
   margin-bottom: 10px;
@@ -37,11 +37,11 @@
 }
 .detail_wrap .right .right_inner tr {
   font-size: 1.2rem;
-  line-height: 2rem;
+  line-height: 2.5rem;
 }
 .detail_wrap .right .right_inner th {
   text-align: left;
-  width: 20%;
+  width: 30%;
 }
 .detail_wrap .right .right_inner td {
   padding-left: 10px;
@@ -88,43 +88,49 @@
 
 .detail_content {
   width: 100%;
-  height: 70vh;
+  height: 600px;
   margin: 0 auto;
   border-bottom: 1px solid #181818;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
   position: relative;
 }
 .detail_content .inner {
-  width: 80%;
-  height: auto;
+  width: 90%;
+  height: 90%;
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .detail_content .inner img {
+  width: 24%;
   box-shadow: 2px 2px 2px #aeaeae;
 }
-.detail_content .another {
-  width: 80%;
+
+.banner {
+  height: 1000px;
+  position: relative;
+}
+.banner .another {
+  width: 90%;
+  height: 90%;
   height: auto;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
-.detail_content .another .inner_box {
+.banner .another .inner_box {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 30px;
 }
-.detail_content .another .inner_box:last-child {
-  margin-bottom: 0;
+.banner .another .inner_box img {
+  width: 48%;
 }
-
-.banner {
-  height: 110vh;
-  position: relative;
+.banner .another .inner_box:last-child {
+  margin-bottom: 0;
 }

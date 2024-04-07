@@ -292,10 +292,10 @@ body {
   position: relative;
 }
 #wrap main .about .about_right .about_right_inner {
-  width: 90%;
+  width: 100%;
   height: 90%;
   background-image: url(../img/about.png);
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -457,7 +457,7 @@ body {
   position: relative;
 }
 #wrap main .publishing_project .project_thumb img {
-  width: 100%;
+  width: 110%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -465,7 +465,7 @@ body {
   transition: all ease-in-out 0.3s;
 }
 #wrap main .publishing_project .project_thumb:hover img {
-  width: 110%;
+  width: 120%;
 }
 #wrap main .publishing_project .right {
   border-left: 1px solid #181818;
@@ -485,8 +485,7 @@ body {
 }
 #wrap main .publishing_project .project_ex .project_ex_inner {
   width: 85%;
-  height: 80%;
-  position: absolute;
+  height: 75%;
 }
 #wrap main .publishing_project .project_ex .project_ex_inner h1 {
   font-size: 3rem;
